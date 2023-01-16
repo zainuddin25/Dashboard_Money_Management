@@ -9,6 +9,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
 import { PiggyBankComponent } from './components/piggy-bank/piggy-bank.component';
 import { ChartComponent } from './components/chart/chart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ChartComponent } from './components/chart/chart.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

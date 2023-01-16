@@ -1,8 +1,11 @@
 <div class="w-full h-full border-2 border-secondary rounded-xl px-4 py-2">
     <h1 class="text-xl font-bold px-2">Future Piggy Bank</h1>
     <div class="border-2 border-secondary rounded-xl my-4 px-2 py-4" *ngFor="let data of pigyBank">
-        <h1 class="font-bold">{{data.wish}}</h1>
-        <input type="range" max="100" min="1" value="{{data.value}}" class="w-full py-2">
+        <div class="flex justify-between items-center">
+            <h1 class="font-bold">{{data.wish}}</h1>
+            <p class="text-xs">{{data.value}}%</p>
+        </div>
+        <mat-progress-bar mode="determinate" value="{{data.value}}" class="my-4"></mat-progress-bar>
         <div class="text-xs flex justify-between">
             <p>{{data.inBank}}</p>
             <p>TO</p>
