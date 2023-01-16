@@ -11,7 +11,7 @@ export class PiggyBankComponent {
       wish: 'Pengen Beli Rumah',
       target: '100.000',
       inBank: '100.000',
-      value: '50'
+      value: '70'
     },
     {
       wish: 'Pengen Beli Rumah',
@@ -23,7 +23,7 @@ export class PiggyBankComponent {
       wish: 'Pengen Beli Rumah',
       target: '100.000',
       inBank: '100.000',
-      value: '50'
+      value: '20'
     },
   ]
 }

@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
 import { PiggyBankComponent } from './components/piggy-bank/piggy-bank.component';
+import { ChartComponent } from './components/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PiggyBankComponent } from './components/piggy-bank/piggy-bank.component
     HeaderComponent,
     SidebarComponent,
     MiniCardComponent,
-    PiggyBankComponent
+    PiggyBankComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
