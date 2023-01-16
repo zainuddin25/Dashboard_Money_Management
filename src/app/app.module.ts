@@ -7,6 +7,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
+import { PiggyBankComponent } from './components/piggy-bank/piggy-bank.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MiniCardComponent } from './components/mini-card/mini-card.component';
     DashboardComponent,
     HeaderComponent,
     SidebarComponent,
-    MiniCardComponent
+    MiniCardComponent,
+    PiggyBankComponent
   ],
   imports: [
     BrowserModule,
