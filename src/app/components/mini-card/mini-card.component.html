@@ -1,0 +1,15 @@
+<div class="grid grid-cols-3 w-full h-full gap-4">
+    <div class="w-full bg-white h-full rounded-xl border-2 border-secondary px-4 py-2" *ngFor="let data of dataList">
+        <div class="flex justify-between items-center">
+            <img src="../../../assets/{{data.icon}}" class="bg-[{{data.colorBackground}}] p-2 w-10 rounded-full" />
+            <i class="fa-solid fa-ellipsis-vertical pr-2"></i>
+        </div>
+        <div class="flex justify-between items-end pt-6">
+            <div>
+                <p class="text-text-secondary">{{data.title}}</p>
+                <h1 class="text-3xl font-bold text-black">RP. {{data.nominal}}</h1>
+            </div>
+            <p class="text-sm py-2 px-4 font-semibold bg-green-income rounded-full text-text-green">+ {{data.total}}</p>
+        </div>
+    </div>
+</div>
