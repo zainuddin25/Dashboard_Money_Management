@@ -1,0 +1,24 @@
+<div class="w-screen h-screen flex justify-center items-center">
+    <div class="border-2 border-secondary rounded-xl p-10">
+        <h1 class="text-center text-black font-semibold text-xl pb-10">Welcome Back</h1>
+        <form class="w-full">
+            <input placeholder="Please Input Your Username" class="w-full py-2 px-4 outline-none border-2 border-secondary rounded-xl mb-2 text-sm bg-white" (change)="changeUsername($event)" />
+            <input placeholder="Please Input Your Password" class="w-full py-2 px-4 outline-none border-2 border-secondary rounded-xl mt-2 text-sm bg-white" type="{{type}}" (change)="changePassword($event)" />
+            <div class="flex items-center justify-between pt-2 px-1">
+                <div class="flex items-center">
+                    <input type="checkbox" (change)="showPassword()" />
+                    <label class="text-xs pl-2 text-black">Show Password</label>
+                </div>
+                <div class="flex text-xs">
+                    <p>Forget Password ?</p>
+                    <a routerLink="" class="pl-1 text-sky-500 font-medium underline">Recover</a>
+                </div>
+            </div>
+        </form>
+        <div class="w-full flex justify-center items-center pt-10">
+            <button class="w-2/4 mx-auto border-2 border-secondary py-2 text-sm rounded-xl text-black hover:text-secondary hover:bg-black hover:border-black duration-200" (click)="login()">
+                Login
+            </button>
+        </div>
+    </div>
+</div>
