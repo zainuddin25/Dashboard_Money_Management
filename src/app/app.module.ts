@@ -11,6 +11,7 @@ import { PiggyBankComponent } from './components/piggy-bank/piggy-bank.component
 import { ChartComponent } from './components/chart/chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ListTransactionComponent } from './components/list-transaction/list-transaction.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     SidebarComponent,
     MiniCardComponent,
     PiggyBankComponent,
-    ChartComponent
+    ChartComponent,
+    ListTransactionComponent
   ],
   imports: [
     BrowserModule,

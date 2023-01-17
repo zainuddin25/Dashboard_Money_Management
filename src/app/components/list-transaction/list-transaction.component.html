@@ -1,0 +1,32 @@
+<div class="border-2 border-secondary rounded-xl w-full h-full">
+    <div class="grid grid-cols-5 gap-4 h-[28%]">
+        <div class="col-span-2 border-b-2 border-black mx-4 py-2">
+            <h1>Name</h1>
+        </div>
+        <div class="col-span-1 border-b-2 border-black py-2">
+            <h1>Date</h1>
+        </div>
+        <div class="col-span-1 border-b-2 border-black mx-4 py-2">
+            <h1>Price</h1>
+        </div>
+        <div class="col-span-1 border-b-2 border-black mx-4 py-2">
+            <h1>Status</h1>
+        </div>
+    </div>
+    <div class="overflow-y-auto h-[64%] my-2 overflow-hidden" id="table-list">
+        <div class="grid grid-cols-5 gap-4" *ngFor="let data of number">
+            <div class="col-span-2 mx-4 py-2">
+                <p>Jajan Cilor</p>
+            </div>
+            <div class="col-span-1 py-2">
+                <p>16-01-2023</p>
+            </div>
+            <div class="col-span-1 mx-4 py-2">
+                <p>10000</p>
+            </div>
+            <div class="col-span-1 mx-4 py-2">
+                <p class="px-6 py-1 text-sm text-[#f95557] bg-[#ffebea] rounded-full text-center">Expenditure</p>
+            </div>
+        </div>
+    </div>
+</div>
